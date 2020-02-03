@@ -41,8 +41,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
                 .scopes("read", "write")
                 .authorizedGrantTypes("password", "refresh_token")
                 .accessTokenValiditySeconds(5 * 60)
-                .refreshTokenValiditySeconds(7 * 80)
-                .redirectUris("http://localhost:8081/login");
+                .refreshTokenValiditySeconds(7 * 80);
 
     }
 
